@@ -85,6 +85,23 @@ export const CREATE_TICKET = gql`
     }
 `;
 
+export const UPDATE_TICKET = gql`
+    mutation UpdateTicket($ticketId: ID!, $status: StatusEnum, $details: String, $priority: PriorityEnum, $source: SourceEnum, $assignedTo: ID, $ticketType: TypeEnum, $description: String) {
+        updateTicket(
+            ticketId: $ticketId,
+            status: $status,
+            details: $details,
+            priority: $priority,
+            source: $source,
+            assignedTo: $assignedTo,
+            ticketType: $ticketType,
+            description: $description
+        ) {
+            ticketId
+        }
+    }
+`;
+
 
 // Type: User
 export const GET_USER = gql`

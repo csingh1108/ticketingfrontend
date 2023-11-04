@@ -57,6 +57,8 @@ const getPriorityColorBackground = (priority) => {
             return 'bg-yellow-100';
         case 'Severe':
             return 'bg-red-100';
+        case 'None':
+            return 'bg-slate-400';
         default:
             return 'bg-black';
     }

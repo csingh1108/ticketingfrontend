@@ -64,7 +64,7 @@ const TicketListView = () => {
     return (
         <div className="bg-slate-100">
             <div className="container mx-auto px-4 sm:px-6 lg:px-10">
-                <TicketMenu/>
+                <TicketMenu searchValue={true}></TicketMenu>
                 <div className="min-h-screen flex justify-center">
 
                     <div className="w-4/5" style={{width:"2000px"}}>
